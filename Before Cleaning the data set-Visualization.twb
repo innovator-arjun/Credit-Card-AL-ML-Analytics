@@ -415,11 +415,11 @@
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <column caption='X10 PAY_5 ' datatype='integer' name='[X10 PAY_5 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X10 PAY_5 ' datatype='integer' name='[X10 PAY_5 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X10 PAY_5]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X10 PAY_5]' role='measure' type='quantitative' />
-      <column caption='X11 PAY_6 ' datatype='integer' name='[X11 PAY_6 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X11 PAY_6 ' datatype='integer' name='[X11 PAY_6 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X11 PAY_6]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X11 PAY_6]' role='measure' type='quantitative' />
@@ -431,51 +431,51 @@
         <calculation class='bin' decimals='3' formula='[X13 BILL_AMT2]' peg='0' size='5000' />
       </column>
       <column datatype='integer' name='[X13 BILL_AMT2]' role='measure' type='quantitative' />
-      <column caption='X14 BILL_AMT3 ' datatype='integer' name='[X14 BILL_AMT3 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X14 BILL_AMT3 ' datatype='integer' name='[X14 BILL_AMT3 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='3' formula='[X14 BILL_AMT3]' peg='0' size='5000' />
       </column>
       <column datatype='integer' name='[X14 BILL_AMT3]' role='measure' type='quantitative' />
-      <column caption='X15 BILL_AMT4 ' datatype='integer' name='[X15 BILL_AMT4 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X15 BILL_AMT4 ' datatype='integer' name='[X15 BILL_AMT4 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='3' formula='[X15 BILL_AMT4]' peg='0' size='5000' />
       </column>
       <column datatype='integer' name='[X15 BILL_AMT4]' role='measure' type='quantitative' />
-      <column caption='X16 BILL_AMT5 ' datatype='integer' name='[X16 BILL_AMT5 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X16 BILL_AMT5 ' datatype='integer' name='[X16 BILL_AMT5 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='3' formula='[X16 BILL_AMT5]' peg='0' size='5000' />
       </column>
       <column datatype='integer' name='[X16 BILL_AMT5]' role='measure' type='quantitative' />
-      <column caption='X17 BILL_AMT6 ' datatype='integer' name='[X17 BILL_AMT6 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X17 BILL_AMT6 ' datatype='integer' name='[X17 BILL_AMT6 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='3' formula='[X17 BILL_AMT6]' peg='0' size='5000' />
       </column>
       <column datatype='integer' name='[X17 BILL_AMT6]' role='measure' type='quantitative' />
-      <column caption='X2 SEX ' datatype='integer' name='[X2 SEX (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X2 SEX ' datatype='integer' name='[X2 SEX (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X2 SEX]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X2 SEX]' role='measure' type='quantitative' />
-      <column caption='X3 EDUCATION ' datatype='integer' name='[X3 EDUCATION (bin) 2]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X3 EDUCATION ' datatype='integer' name='[X3 EDUCATION (bin) 2]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X3 EDUCATION]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X3 EDUCATION]' role='measure' type='quantitative' />
-      <column caption='X4 MARRIAGE ' datatype='integer' name='[X4 MARRIAGE (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X4 MARRIAGE ' datatype='integer' name='[X4 MARRIAGE (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X4 MARRIAGE]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X4 MARRIAGE]' role='measure' type='quantitative' />
-      <column caption='X6 PAY_0 ' datatype='integer' name='[X6 PAY_0 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X6 PAY_0 ' datatype='integer' name='[X6 PAY_0 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X6 PAY_0]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X6 PAY_0]' role='measure' type='quantitative' />
-      <column caption='X7 PAY_2 ' datatype='integer' name='[X7 PAY_2 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X7 PAY_2 ' datatype='integer' name='[X7 PAY_2 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X7 PAY_2]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X7 PAY_2]' role='measure' type='quantitative' />
-      <column caption='X8 PAY_3 ' datatype='integer' name='[X8 PAY_3 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X8 PAY_3 ' datatype='integer' name='[X8 PAY_3 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X8 PAY_3]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X8 PAY_3]' role='measure' type='quantitative' />
-      <column caption='X9 PAY_4 ' datatype='integer' name='[X9 PAY_4 (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='X9 PAY_4 ' datatype='integer' name='[X9 PAY_4 (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[X9 PAY_4]' peg='0' size='1' />
       </column>
       <column datatype='integer' name='[X9 PAY_4]' role='measure' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.319178' measure-ordering='alphabetic' measure-percentage='0.680822' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.317808' measure-ordering='alphabetic' measure-percentage='0.682192' show-structure='true' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
@@ -638,7 +638,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X14 BILL_AMT3 ' datatype='integer' name='[X14 BILL_AMT3 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X14 BILL_AMT3 ' datatype='integer' name='[X14 BILL_AMT3 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='3' formula='[X14 BILL_AMT3]' peg='0' size='5000' />
             </column>
             <column datatype='integer' name='[X14 BILL_AMT3]' role='measure' type='quantitative' />
@@ -704,7 +704,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X15 BILL_AMT4 ' datatype='integer' name='[X15 BILL_AMT4 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X15 BILL_AMT4 ' datatype='integer' name='[X15 BILL_AMT4 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='3' formula='[X15 BILL_AMT4]' peg='0' size='5000' />
             </column>
             <column datatype='integer' name='[X15 BILL_AMT4]' role='measure' type='quantitative' />
@@ -766,7 +766,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X16 BILL_AMT5 ' datatype='integer' name='[X16 BILL_AMT5 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X16 BILL_AMT5 ' datatype='integer' name='[X16 BILL_AMT5 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='3' formula='[X16 BILL_AMT5]' peg='0' size='5000' />
             </column>
             <column datatype='integer' name='[X16 BILL_AMT5]' role='measure' type='quantitative' />
@@ -828,7 +828,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X17 BILL_AMT6 ' datatype='integer' name='[X17 BILL_AMT6 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X17 BILL_AMT6 ' datatype='integer' name='[X17 BILL_AMT6 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='3' formula='[X17 BILL_AMT6]' peg='0' size='5000' />
             </column>
             <column datatype='integer' name='[X17 BILL_AMT6]' role='measure' type='quantitative' />
@@ -890,7 +890,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X3 EDUCATION ' datatype='integer' name='[X3 EDUCATION (bin) 2]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X3 EDUCATION ' datatype='integer' name='[X3 EDUCATION (bin) 2]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X3 EDUCATION]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X3 EDUCATION]' role='measure' type='quantitative' />
@@ -951,7 +951,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X4 MARRIAGE ' datatype='integer' name='[X4 MARRIAGE (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X4 MARRIAGE ' datatype='integer' name='[X4 MARRIAGE (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X4 MARRIAGE]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X4 MARRIAGE]' role='measure' type='quantitative' />
@@ -996,7 +996,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X8 PAY_3 ' datatype='integer' name='[X8 PAY_3 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X8 PAY_3 ' datatype='integer' name='[X8 PAY_3 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X8 PAY_3]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X8 PAY_3]' role='measure' type='quantitative' />
@@ -1035,7 +1035,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X9 PAY_4 ' datatype='integer' name='[X9 PAY_4 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X9 PAY_4 ' datatype='integer' name='[X9 PAY_4 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X9 PAY_4]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X9 PAY_4]' role='measure' type='quantitative' />
@@ -1071,7 +1071,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X10 PAY_5 ' datatype='integer' name='[X10 PAY_5 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X10 PAY_5 ' datatype='integer' name='[X10 PAY_5 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X10 PAY_5]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X10 PAY_5]' role='measure' type='quantitative' />
@@ -1103,7 +1103,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X11 PAY_6 ' datatype='integer' name='[X11 PAY_6 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X11 PAY_6 ' datatype='integer' name='[X11 PAY_6 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X11 PAY_6]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X11 PAY_6]' role='measure' type='quantitative' />
@@ -1142,7 +1142,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X6 PAY_0 ' datatype='integer' name='[X6 PAY_0 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X6 PAY_0 ' datatype='integer' name='[X6 PAY_0 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X6 PAY_0]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X6 PAY_0]' role='measure' type='quantitative' />
@@ -1182,7 +1182,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X7 PAY_2 ' datatype='integer' name='[X7 PAY_2 (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X7 PAY_2 ' datatype='integer' name='[X7 PAY_2 (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X7 PAY_2]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X7 PAY_2]' role='measure' type='quantitative' />
@@ -1218,7 +1218,7 @@
             <datasource caption='Data (default)' name='federated.1d6877x1gihqx01ag2epn1x1599q' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6877x1gihqx01ag2epn1x1599q'>
-            <column caption='X2 SEX ' datatype='integer' name='[X2 SEX (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='X2 SEX ' datatype='integer' name='[X2 SEX (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[X2 SEX]' peg='0' size='1' />
             </column>
             <column datatype='integer' name='[X2 SEX]' role='measure' type='quantitative' />
