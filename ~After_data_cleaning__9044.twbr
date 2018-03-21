@@ -1,0 +1,3328 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CREDIT_CARD_DEFAULT_AFTER (Data_Science)' inline='true' name='federated.1j5a9qz1ucixbv12i9i2p00a0qd3' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ARJUN\SQLEXPRESS' name='sqlserver.1muue2i18jo2501h36x6y0321085'>
+            <connection authentication='sspi' class='sqlserver' dbname='Data_Science' odbc-native-protocol='yes' one-time-sql='' server='ARJUN\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.1muue2i18jo2501h36x6y0321085' name='CREDIT_CARD_DEFAULT_AFTER' table='[dbo].[CREDIT_CARD_DEFAULT_AFTER]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIMIT_BAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIMIT_BAL]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>LIMIT_BAL</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SEX]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>SEX</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDUCATION</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EDUCATION]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>EDUCATION</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARRIAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MARRIAGE]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>MARRIAGE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_3</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_4</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_5</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_6]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_6</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT3</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT4</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT5</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BILL_AMT6]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>BILL_AMT6</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT2</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT3</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT4</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT5</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAY_AMT6]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>PAY_AMT6</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEFAULTER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEFAULTER]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>DEFAULTER</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_apr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_bal_apr]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bal_apr</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_may</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_bal_may]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bal_may</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_june</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_bal_june]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bal_june</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_july</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_bal_july]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bal_july</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_aug</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[out_bal_aug]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bal_aug</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bucket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bucket]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>out_bucket</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeBin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AgeBin]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>AgeBin</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_marital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender_marital]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>gender_marital</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_agebin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender_agebin]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>gender_agebin</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_6]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_6</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_5</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_4</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_3</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_2</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Closeness_1</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_6]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_6</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_5</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_4</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_3</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_2</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Client_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Client_1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Client_1</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_exp_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_exp_5]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Avg_exp_5</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_exp_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_exp_4]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Avg_exp_4</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_exp_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_exp_3]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Avg_exp_3</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_exp_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_exp_2]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Avg_exp_2</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_exp_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_exp_1]</local-name>
+            <parent-name>[CREDIT_CARD_DEFAULT_AFTER]</parent-name>
+            <remote-alias>Avg_exp_1</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Bin' datatype='integer' name='[AgeBin]' role='measure' type='quantitative' />
+      <column caption='Avg exp 1' datatype='real' name='[Avg_exp_1]' role='measure' type='quantitative' />
+      <column caption='Avg exp 2' datatype='real' name='[Avg_exp_2]' role='measure' type='quantitative' />
+      <column caption='Avg exp 3' datatype='real' name='[Avg_exp_3]' role='measure' type='quantitative' />
+      <column caption='Avg exp 4' datatype='real' name='[Avg_exp_4]' role='measure' type='quantitative' />
+      <column caption='Avg exp 5' datatype='real' name='[Avg_exp_5]' role='measure' type='quantitative' />
+      <column caption='Bill Amt1' datatype='real' name='[BILL_AMT1]' role='measure' type='quantitative' />
+      <column caption='Bill Amt2' datatype='real' name='[BILL_AMT2]' role='measure' type='quantitative' />
+      <column caption='Bill Amt3' datatype='real' name='[BILL_AMT3]' role='measure' type='quantitative' />
+      <column caption='Bill Amt4' datatype='real' name='[BILL_AMT4]' role='measure' type='quantitative' />
+      <column caption='Bill Amt5' datatype='real' name='[BILL_AMT5]' role='measure' type='quantitative' />
+      <column caption='Bill Amt6' datatype='real' name='[BILL_AMT6]' role='measure' type='quantitative' />
+      <column caption='Client 1' datatype='integer' name='[Client_1]' role='measure' type='quantitative' />
+      <column caption='Client 2' datatype='integer' name='[Client_2]' role='measure' type='quantitative' />
+      <column caption='Client 3' datatype='integer' name='[Client_3]' role='measure' type='quantitative' />
+      <column caption='Client 4' datatype='integer' name='[Client_4]' role='measure' type='quantitative' />
+      <column caption='Client 5' datatype='integer' name='[Client_5]' role='measure' type='quantitative' />
+      <column caption='Client 6' datatype='integer' name='[Client_6]' role='measure' type='quantitative' />
+      <column caption='Closeness 1' datatype='real' name='[Closeness_1]' role='measure' type='quantitative' />
+      <column caption='Closeness 2' datatype='real' name='[Closeness_2]' role='measure' type='quantitative' />
+      <column caption='Closeness 3' datatype='real' name='[Closeness_3]' role='measure' type='quantitative' />
+      <column caption='Closeness 4' datatype='real' name='[Closeness_4]' role='measure' type='quantitative' />
+      <column caption='Closeness 5' datatype='real' name='[Closeness_5]' role='measure' type='quantitative' />
+      <column caption='Closeness 6' datatype='real' name='[Closeness_6]' role='measure' type='quantitative' />
+      <column caption='Defaulter' datatype='real' name='[DEFAULTER]' role='measure' type='quantitative' />
+      <column caption='Education' datatype='real' name='[EDUCATION]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Limit Bal' datatype='real' name='[LIMIT_BAL]' role='measure' type='quantitative' />
+      <column caption='Marriage' datatype='real' name='[MARRIAGE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Pay 1' datatype='real' name='[PAY_1]' role='measure' type='quantitative' />
+      <column caption='Pay 2' datatype='real' name='[PAY_2]' role='measure' type='quantitative' />
+      <column caption='Pay 3' datatype='real' name='[PAY_3]' role='measure' type='quantitative' />
+      <column caption='Pay 4' datatype='real' name='[PAY_4]' role='measure' type='quantitative' />
+      <column caption='Pay 5' datatype='real' name='[PAY_5]' role='measure' type='quantitative' />
+      <column caption='Pay 6' datatype='real' name='[PAY_6]' role='measure' type='quantitative' />
+      <column caption='Pay Amt1' datatype='real' name='[PAY_AMT1]' role='measure' type='quantitative' />
+      <column caption='Pay Amt2' datatype='real' name='[PAY_AMT2]' role='measure' type='quantitative' />
+      <column caption='Pay Amt3' datatype='real' name='[PAY_AMT3]' role='measure' type='quantitative' />
+      <column caption='Pay Amt4' datatype='real' name='[PAY_AMT4]' role='measure' type='quantitative' />
+      <column caption='Pay Amt5' datatype='real' name='[PAY_AMT5]' role='measure' type='quantitative' />
+      <column caption='Pay Amt6' datatype='real' name='[PAY_AMT6]' role='measure' type='quantitative' />
+      <column caption='Gender Agebin' datatype='integer' name='[gender_agebin]' role='measure' type='quantitative' />
+      <column caption='Gender Marital' datatype='integer' name='[gender_marital]' role='measure' type='quantitative' />
+      <column caption='Out Bal Apr' datatype='real' name='[out_bal_apr]' role='measure' type='quantitative' />
+      <column caption='Out Bal Aug' datatype='real' name='[out_bal_aug]' role='measure' type='quantitative' />
+      <column caption='Out Bal July' datatype='real' name='[out_bal_july]' role='measure' type='quantitative' />
+      <column caption='Out Bal June' datatype='real' name='[out_bal_june]' role='measure' type='quantitative' />
+      <column caption='Out Bal May' datatype='real' name='[out_bal_may]' role='measure' type='quantitative' />
+      <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.101761' measure-ordering='alphabetic' measure-percentage='0.898239' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Data (After_cleaning_data)' inline='true' name='federated.1oy707c1xfx7hr148e3g41328bsr' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='After_cleaning_data' name='excel-direct.1n2gz6y1h0lkkv1akw08i174er78'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ARJUN_PC/Documents/GitHub/Credit-Card-AL-ML-Analytics/After_cleaning_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1n2gz6y1h0lkkv1akw08i174er78' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:AM10001:no:A1:AM10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='LIMIT_BAL' ordinal='0' />
+            <column datatype='integer' name='SEX' ordinal='1' />
+            <column datatype='integer' name='EDUCATION' ordinal='2' />
+            <column datatype='integer' name='MARRIAGE' ordinal='3' />
+            <column datatype='integer' name='AGE' ordinal='4' />
+            <column datatype='integer' name='PAY_1' ordinal='5' />
+            <column datatype='integer' name='PAY_2' ordinal='6' />
+            <column datatype='integer' name='PAY_3' ordinal='7' />
+            <column datatype='integer' name='PAY_4' ordinal='8' />
+            <column datatype='integer' name='PAY_5' ordinal='9' />
+            <column datatype='integer' name='PAY_6' ordinal='10' />
+            <column datatype='integer' name='BILL_AMT1' ordinal='11' />
+            <column datatype='integer' name='BILL_AMT2' ordinal='12' />
+            <column datatype='integer' name='BILL_AMT3' ordinal='13' />
+            <column datatype='integer' name='BILL_AMT4' ordinal='14' />
+            <column datatype='integer' name='BILL_AMT5' ordinal='15' />
+            <column datatype='integer' name='BILL_AMT6' ordinal='16' />
+            <column datatype='integer' name='PAY_AMT1' ordinal='17' />
+            <column datatype='integer' name='PAY_AMT2' ordinal='18' />
+            <column datatype='integer' name='PAY_AMT3' ordinal='19' />
+            <column datatype='integer' name='PAY_AMT4' ordinal='20' />
+            <column datatype='integer' name='PAY_AMT5' ordinal='21' />
+            <column datatype='integer' name='PAY_AMT6' ordinal='22' />
+            <column datatype='integer' name='DEFAULTER' ordinal='23' />
+            <column datatype='integer' name='out_bal_apr' ordinal='24' />
+            <column datatype='integer' name='out_bal_may' ordinal='25' />
+            <column datatype='integer' name='out_bal_june' ordinal='26' />
+            <column datatype='integer' name='out_bal_july' ordinal='27' />
+            <column datatype='integer' name='out_bal_aug' ordinal='28' />
+            <column datatype='integer' name='out_bucket' ordinal='29' />
+            <column datatype='integer' name='AgeBin' ordinal='30' />
+            <column datatype='integer' name='gender_marital' ordinal='31' />
+            <column datatype='integer' name='gender_agebin' ordinal='32' />
+            <column datatype='real' name='Closeness_6' ordinal='33' />
+            <column datatype='real' name='Closeness_5' ordinal='34' />
+            <column datatype='real' name='Closeness_4' ordinal='35' />
+            <column datatype='real' name='Closeness_3' ordinal='36' />
+            <column datatype='real' name='Closeness_2' ordinal='37' />
+            <column datatype='real' name='Closeness_1' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>LIMIT_BAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIMIT_BAL]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>LIMIT_BAL</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SEX]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>SEX</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDUCATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EDUCATION]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>EDUCATION</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARRIAGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MARRIAGE]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>MARRIAGE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_1]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_2]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_3]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_3</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_4]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_4</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_5]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_5</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_6]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_6</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT1]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT2]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT2</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT3]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT3</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT4]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT4</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT5]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT5</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_AMT6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILL_AMT6]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>BILL_AMT6</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT1]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT2]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT3]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT3</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT4]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT4</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT5]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT5</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAY_AMT6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAY_AMT6]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>PAY_AMT6</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEFAULTER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEFAULTER]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>DEFAULTER</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_apr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bal_apr]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bal_apr</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_may</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bal_may]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bal_may</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_june</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bal_june]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bal_june</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_july</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bal_july]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bal_july</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bal_aug</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bal_aug]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bal_aug</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_bucket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[out_bucket]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>out_bucket</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeBin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AgeBin]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>AgeBin</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_marital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender_marital]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>gender_marital</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_agebin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender_agebin]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>gender_agebin</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_6]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_6</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_5]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_5</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_4]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_4</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_3]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_3</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_2]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_2</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Closeness_1]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Closeness_1</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AM10001:no:A1:AM10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age Bin ' datatype='integer' name='[Age Bin (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[AgeBin]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='20 to 30' />
+          <alias key='2' value='30 to 40' />
+          <alias key='3' value='40 to 50' />
+          <alias key='4' value='50 to 60' />
+          <alias key='5' value='60 to 70' />
+          <alias key='6' value='70 to 81' />
+        </aliases>
+      </column>
+      <column caption='Age Bin' datatype='integer' name='[AgeBin]' role='measure' type='quantitative' />
+      <column caption='Bill Amt1' datatype='integer' name='[BILL_AMT1]' role='measure' type='quantitative' />
+      <column caption='Bill Amt2' datatype='integer' name='[BILL_AMT2]' role='measure' type='quantitative' />
+      <column caption='Bill Amt3' datatype='integer' name='[BILL_AMT3]' role='measure' type='quantitative' />
+      <column caption='Bill Amt4' datatype='integer' name='[BILL_AMT4]' role='measure' type='quantitative' />
+      <column caption='Bill Amt5' datatype='integer' name='[BILL_AMT5]' role='measure' type='quantitative' />
+      <column caption='Bill Amt6' datatype='integer' name='[BILL_AMT6]' role='measure' type='quantitative' />
+      <column caption='CORR Value' datatype='real' name='[Calculation_409264662044004352]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([MARRIAGE],[out_bucket])' />
+      </column>
+      <column caption='Closeness 1' datatype='real' name='[Closeness_1]' role='measure' type='quantitative' />
+      <column caption='Closeness 2' datatype='real' name='[Closeness_2]' role='measure' type='quantitative' />
+      <column caption='Closeness 3' datatype='real' name='[Closeness_3]' role='measure' type='quantitative' />
+      <column caption='Closeness 4' datatype='real' name='[Closeness_4]' role='measure' type='quantitative' />
+      <column caption='Closeness 5' datatype='real' name='[Closeness_5]' role='measure' type='quantitative' />
+      <column caption='Closeness 6' datatype='real' name='[Closeness_6]' role='measure' type='quantitative' />
+      <column caption='Defaulter' datatype='integer' name='[DEFAULTER]' role='measure' type='quantitative' />
+      <column caption='Education' datatype='integer' name='[EDUCATION]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Education ' datatype='integer' name='[Education (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[EDUCATION]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='Grad.' />
+          <alias key='2' value='Univ.' />
+          <alias key='3' value='HighSchool' />
+          <alias key='4' value='others' />
+        </aliases>
+      </column>
+      <column aggregation='None' caption='Gender Agebin (bin)' datatype='integer' name='[Gender Agebin (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[gender_agebin]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='Man 20' />
+          <alias key='2' value='Man 30' />
+          <alias key='3' value='Man 40' />
+          <alias key='4' value='Man 50' />
+          <alias key='5' value='&gt;50 M' />
+          <alias key='6' value='W 20' />
+          <alias key='7' value='W 30' />
+          <alias key='8' value='W 40' />
+          <alias key='9' value='W 50' />
+          <alias key='10' value='&gt;50 W' />
+        </aliases>
+      </column>
+      <column aggregation='None' caption='Gender Marital (bin)' datatype='integer' name='[Gender Marital (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[gender_marital]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='Married_M' />
+          <alias key='2' value='Single_M' />
+          <alias key='3' value='Divorced_M' />
+          <alias key='4' value='Married_W' />
+          <alias key='5' value='Single_W' />
+          <alias key='6' value='Divorced_W' />
+        </aliases>
+      </column>
+      <column caption='Limit Bal' datatype='integer' name='[LIMIT_BAL]' role='measure' type='quantitative' />
+      <column caption='Marriage' datatype='integer' name='[MARRIAGE]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Marriage ' datatype='integer' name='[Marriage (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[MARRIAGE]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='Married' />
+          <alias key='2' value='Single' />
+          <alias key='3' value='Others' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='None' caption='Out Bal Apr (bin)' datatype='integer' name='[Out Bal Apr (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[out_bal_apr]' peg='0' size='1e+07' />
+      </column>
+      <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+        <aliases>
+          <alias key='1' value='0' />
+          <alias key='2' value='1 to 1K' />
+          <alias key='3' value='1K to 5K' />
+          <alias key='4' value='5K to 10K' />
+          <alias key='5' value='10K to 25K' />
+          <alias key='6' value='25K to 50K' />
+          <alias key='7' value='50K to 100K' />
+          <alias key='8' value='&gt;100K' />
+        </aliases>
+      </column>
+      <column caption='Pay 1' datatype='integer' name='[PAY_1]' role='measure' type='quantitative' />
+      <column caption='Pay 2' datatype='integer' name='[PAY_2]' role='measure' type='quantitative' />
+      <column caption='Pay 3' datatype='integer' name='[PAY_3]' role='measure' type='quantitative' />
+      <column caption='Pay 4' datatype='integer' name='[PAY_4]' role='measure' type='quantitative' />
+      <column caption='Pay 5' datatype='integer' name='[PAY_5]' role='measure' type='quantitative' />
+      <column caption='Pay 6' datatype='integer' name='[PAY_6]' role='measure' type='quantitative' />
+      <column caption='Pay Amt1' datatype='integer' name='[PAY_AMT1]' role='measure' type='quantitative' />
+      <column caption='Pay Amt2' datatype='integer' name='[PAY_AMT2]' role='measure' type='quantitative' />
+      <column caption='Pay Amt3' datatype='integer' name='[PAY_AMT3]' role='measure' type='quantitative' />
+      <column caption='Pay Amt4' datatype='integer' name='[PAY_AMT4]' role='measure' type='quantitative' />
+      <column caption='Pay Amt5' datatype='integer' name='[PAY_AMT5]' role='measure' type='quantitative' />
+      <column caption='Pay Amt6' datatype='integer' name='[PAY_AMT6]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Pay 1 ' datatype='integer' name='[Pay 1 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_1]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Pay 2 ' datatype='integer' name='[Pay 2 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_2]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Pay 3 ' datatype='integer' name='[Pay 3 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_3]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Pay 4 ' datatype='integer' name='[Pay 4 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_4]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Pay 5 ' datatype='integer' name='[Pay 5 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_5]' peg='0' size='1' />
+      </column>
+      <column aggregation='None' caption='Pay 6 ' datatype='integer' name='[Pay 6 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[PAY_6]' peg='0' size='1' />
+      </column>
+      <column caption='Gender Agebin' datatype='integer' name='[gender_agebin]' role='measure' type='quantitative' />
+      <column caption='Gender Marital' datatype='integer' name='[gender_marital]' role='measure' type='quantitative' />
+      <column caption='Out Bal Apr' datatype='integer' name='[out_bal_apr]' role='measure' type='quantitative' />
+      <column caption='Out Bal Aug' datatype='integer' name='[out_bal_aug]' role='measure' type='quantitative' />
+      <column caption='Out Bal July' datatype='integer' name='[out_bal_july]' role='measure' type='quantitative' />
+      <column caption='Out Bal June' datatype='integer' name='[out_bal_june]' role='measure' type='quantitative' />
+      <column caption='Out Bal May' datatype='integer' name='[out_bal_may]' role='measure' type='quantitative' />
+      <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+      <column-instance column='[Education (bin)]' derivation='None' name='[none:Education (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Marriage (bin)]' derivation='None' name='[none:Marriage (bin):ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.270423' measure-ordering='alphabetic' measure-percentage='0.729577' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Education (bin):ok]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#44924e'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#73ba67'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Marriage (bin):ok]' palette='purple_10_0' type='palette'>
+            <map to='#7c4d79'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#bc86a9'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#eec9e5'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Education DA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Education' datatype='integer' name='[EDUCATION]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Education ' datatype='integer' name='[Education (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[EDUCATION]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Grad.' />
+                <alias key='2' value='Univ.' />
+                <alias key='3' value='HighSchool' />
+                <alias key='4' value='others' />
+              </aliases>
+            </column>
+            <column-instance column='[EDUCATION]' derivation='Count' name='[cnt:EDUCATION:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education (bin)]' derivation='None' name='[none:Education (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:EDUCATION:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Education (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Education DA-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Education' datatype='integer' name='[EDUCATION]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Education ' datatype='integer' name='[Education (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[EDUCATION]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Grad.' />
+                <alias key='2' value='Univ.' />
+                <alias key='3' value='HighSchool' />
+                <alias key='4' value='others' />
+              </aliases>
+            </column>
+            <column-instance column='[EDUCATION]' derivation='Count' name='[cnt:EDUCATION:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education (bin)]' derivation='None' name='[none:Education (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:EDUCATION:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]' />
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Marriage DA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Marriage Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Marriage' datatype='integer' name='[MARRIAGE]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Marriage ' datatype='integer' name='[Marriage (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[MARRIAGE]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Married' />
+                <alias key='2' value='Single' />
+                <alias key='3' value='Others' />
+              </aliases>
+            </column>
+            <column-instance column='[MARRIAGE]' derivation='Count' name='[cnt:MARRIAGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marriage (bin)]' derivation='None' name='[none:Marriage (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:MARRIAGE:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Marriage (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Marriage DA-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Marriage Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Marriage' datatype='integer' name='[MARRIAGE]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Marriage ' datatype='integer' name='[Marriage (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[MARRIAGE]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Married' />
+                <alias key='2' value='Single' />
+                <alias key='3' value='Others' />
+              </aliases>
+            </column>
+            <column-instance column='[MARRIAGE]' derivation='Count' name='[cnt:MARRIAGE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marriage (bin)]' derivation='None' name='[none:Marriage (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:MARRIAGE:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]' />
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Pay1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 1 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 1' datatype='integer' name='[PAY_1]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 1 ' datatype='integer' name='[Pay 1 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_1]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_1]' derivation='Count' name='[cnt:PAY_1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 1 (bin)]' derivation='None' name='[none:Pay 1 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_1:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 1 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Pay2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 2 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 2' datatype='integer' name='[PAY_2]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 2 ' datatype='integer' name='[Pay 2 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_2]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_2]' derivation='Count' name='[cnt:PAY_2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 2 (bin)]' derivation='None' name='[none:Pay 2 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_2:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 2 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Pay3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 3 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 3' datatype='integer' name='[PAY_3]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 3 ' datatype='integer' name='[Pay 3 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_3]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_3]' derivation='Count' name='[cnt:PAY_3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 3 (bin)]' derivation='None' name='[none:Pay 3 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_3:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 3 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Pay4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 4 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 4' datatype='integer' name='[PAY_4]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 4 ' datatype='integer' name='[Pay 4 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_4]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_4]' derivation='Count' name='[cnt:PAY_4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 4 (bin)]' derivation='None' name='[none:Pay 4 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_4:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 4 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Pay5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 5 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 5' datatype='integer' name='[PAY_5]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 5 ' datatype='integer' name='[Pay 5 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_5]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_5]' derivation='Count' name='[cnt:PAY_5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 5 (bin)]' derivation='None' name='[none:Pay 5 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_5:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 5 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Pay6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment 6 Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Pay 6' datatype='integer' name='[PAY_6]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Pay 6 ' datatype='integer' name='[Pay 6 (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[PAY_6]' peg='0' size='1' />
+            </column>
+            <column-instance column='[PAY_6]' derivation='Count' name='[cnt:PAY_6:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pay 6 (bin)]' derivation='None' name='[none:Pay 6 (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:PAY_6:qk]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Pay 6 (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 1 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 2 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 3 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 4 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 5 (bin)]</column>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Pay 6 (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='out_buck&amp;age_bin'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Outstanding Balance and Age Bin</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column aggregation='None' caption='Age Bin ' datatype='integer' name='[Age Bin (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[AgeBin]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='20 to 30' />
+                <alias key='2' value='30 to 40' />
+                <alias key='3' value='40 to 50' />
+                <alias key='4' value='50 to 60' />
+                <alias key='5' value='60 to 70' />
+                <alias key='6' value='70 to 81' />
+              </aliases>
+            </column>
+            <column caption='Age Bin' datatype='integer' name='[AgeBin]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='0' />
+                <alias key='2' value='1 to 1K' />
+                <alias key='3' value='1K to 5K' />
+                <alias key='4' value='5K to 10K' />
+                <alias key='5' value='10K to 25K' />
+                <alias key='6' value='25K to 50K' />
+                <alias key='7' value='50K to 100K' />
+                <alias key='8' value='&gt;100K' />
+              </aliases>
+            </column>
+            <column-instance column='[out_bucket]' derivation='Count' name='[cnt:out_bucket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age Bin (bin)]' derivation='None' name='[none:Age Bin (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Out Bucket (bin)]' derivation='None' name='[none:Out Bucket (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Age Bin (bin):ok]' value='71' />
+            <format attr='height' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]' value='25' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' max='2288' min='1' num-steps='5' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffbe7d' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Age Bin (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1oy707c1xfx7hr148e3g41328bsr].[Age Bin (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+    <worksheet name='out_bucket&amp;Edu'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Outstanding Bucket and Education&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Education' datatype='integer' name='[EDUCATION]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Education ' datatype='integer' name='[Education (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[EDUCATION]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Grad.' />
+                <alias key='2' value='Univ.' />
+                <alias key='3' value='HighSchool' />
+                <alias key='4' value='others' />
+              </aliases>
+            </column>
+            <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='0' />
+                <alias key='2' value='1 to 1K' />
+                <alias key='3' value='1K to 5K' />
+                <alias key='4' value='5K to 10K' />
+                <alias key='5' value='10K to 25K' />
+                <alias key='6' value='25K to 50K' />
+                <alias key='7' value='50K to 100K' />
+                <alias key='8' value='&gt;100K' />
+              </aliases>
+            </column>
+            <column-instance column='[out_bucket]' derivation='Count' name='[cnt:out_bucket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education (bin)]' derivation='None' name='[none:Education (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Out Bucket (bin)]' derivation='None' name='[none:Out Bucket (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]' value='79' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='out_bucket&amp;Mar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Outstanding amount and Marriage &#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column caption='Marriage' datatype='integer' name='[MARRIAGE]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Marriage ' datatype='integer' name='[Marriage (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[MARRIAGE]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Married' />
+                <alias key='2' value='Single' />
+                <alias key='3' value='Others' />
+              </aliases>
+            </column>
+            <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='0' />
+                <alias key='2' value='1 to 1K' />
+                <alias key='3' value='1K to 5K' />
+                <alias key='4' value='5K to 10K' />
+                <alias key='5' value='10K to 25K' />
+                <alias key='6' value='25K to 50K' />
+                <alias key='7' value='50K to 100K' />
+                <alias key='8' value='&gt;100K' />
+              </aliases>
+            </column>
+            <column-instance column='[out_bucket]' derivation='Count' name='[cnt:out_bucket:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marriage (bin)]' derivation='None' name='[none:Marriage (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Out Bucket (bin)]' derivation='None' name='[none:Out Bucket (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]' value='124' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='out_gender_bin'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>out_bal, Genderbin </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column aggregation='None' caption='Gender Agebin (bin)' datatype='integer' name='[Gender Agebin (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[gender_agebin]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Man 20' />
+                <alias key='2' value='Man 30' />
+                <alias key='3' value='Man 40' />
+                <alias key='4' value='Man 50' />
+                <alias key='5' value='&gt;50 M' />
+                <alias key='6' value='W 20' />
+                <alias key='7' value='W 30' />
+                <alias key='8' value='W 40' />
+                <alias key='9' value='W 50' />
+                <alias key='10' value='&gt;50 W' />
+              </aliases>
+            </column>
+            <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='0' />
+                <alias key='2' value='1 to 1K' />
+                <alias key='3' value='1K to 5K' />
+                <alias key='4' value='5K to 10K' />
+                <alias key='5' value='10K to 25K' />
+                <alias key='6' value='25K to 50K' />
+                <alias key='7' value='50K to 100K' />
+                <alias key='8' value='&gt;100K' />
+              </aliases>
+            </column>
+            <column-instance column='[out_bucket]' derivation='Count' name='[cnt:out_bucket:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender Agebin' datatype='integer' name='[gender_agebin]' role='measure' type='quantitative' />
+            <column-instance column='[Gender Agebin (bin)]' derivation='None' name='[none:Gender Agebin (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Out Bucket (bin)]' derivation='None' name='[none:Out Bucket (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Gender Agebin (bin):ok]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Gender Agebin (bin):ok]' />
+              <groupfilter function='member' level='[none:Gender Agebin (bin):ok]' member='0' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Gender Agebin (bin):ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='out_gender_marital'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Out_bal ,gender,marital status&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (After_cleaning_data)' name='federated.1oy707c1xfx7hr148e3g41328bsr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oy707c1xfx7hr148e3g41328bsr'>
+            <column aggregation='None' caption='Gender Marital (bin)' datatype='integer' name='[Gender Marital (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[gender_marital]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='Married_M' />
+                <alias key='2' value='Single_M' />
+                <alias key='3' value='Divorced_M' />
+                <alias key='4' value='Married_W' />
+                <alias key='5' value='Single_W' />
+                <alias key='6' value='Divorced_W' />
+              </aliases>
+            </column>
+            <column aggregation='None' caption='Out Bucket (bin)' datatype='integer' name='[Out Bucket (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[out_bucket]' peg='0' size='1' />
+              <aliases>
+                <alias key='1' value='0' />
+                <alias key='2' value='1 to 1K' />
+                <alias key='3' value='1K to 5K' />
+                <alias key='4' value='5K to 10K' />
+                <alias key='5' value='10K to 25K' />
+                <alias key='6' value='25K to 50K' />
+                <alias key='7' value='50K to 100K' />
+                <alias key='8' value='&gt;100K' />
+              </aliases>
+            </column>
+            <column-instance column='[out_bucket]' derivation='Count' name='[cnt:out_bucket:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender Marital' datatype='integer' name='[gender_marital]' role='measure' type='quantitative' />
+            <column-instance column='[Gender Marital (bin)]' derivation='None' name='[none:Gender Marital (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Out Bucket (bin)]' derivation='None' name='[none:Out Bucket (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Out Bucket' datatype='integer' name='[out_bucket]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Gender Marital (bin):ok]' direction='DESC' using='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]'>
+            <groupfilter function='member' level='[none:Out Bucket (bin):ok]' member='2' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Gender Marital (bin):ok]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+              <text column='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Out Bucket (bin):ok]</rows>
+        <cols>[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Gender Marital (bin):ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Edu &amp; Mar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Education and Marriage-After Cleaning</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='6250' id='7' type='title' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91750' id='4' type='layout-basic' w='98400' x='800' y='7250'>
+                <zone h='45875' id='1' name='Education DA' w='49200' x='800' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='3' name='Marriage DA' w='49200' x='50000' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='8' name='Education DA-2' w='49200' x='800' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='12' name='Marriage DA-2' w='49200' x='50000' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Heat_Maps'>
+      <style />
+      <size maxheight='1000' maxwidth='1100' minheight='1000' minwidth='1100' sizing-mode='fixed' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='24' param='vert' type='layout-flow' w='98546' x='727' y='800'>
+            <zone h='5000' id='25' type='title' w='98546' x='727' y='800'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93400' id='20' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+              <zone h='93400' id='17' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+                <zone h='93400' id='14' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+                  <zone h='93400' id='11' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+                    <zone h='93400' id='8' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+                      <zone h='93400' id='5' param='horz' type='layout-flow' w='98546' x='727' y='5800'>
+                        <zone h='93400' id='3' type='layout-basic' w='98546' x='727' y='5800'>
+                          <zone h='30848' id='1' name='out_buck&amp;age_bin' w='50455' x='727' y='5800'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='30848' id='6' name='out_bucket&amp;Edu' w='48091' x='51182' y='5800'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='31276' id='12' name='out_gender_marital' w='56637' x='727' y='36648'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='31276' id='18' name='out_gender_bin' w='98546' x='727' y='67924'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='31276' id='22' name='out_bucket&amp;Mar' w='41909' x='57364' y='36648'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Payment Dash'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Payment Data -After cleaning</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='6250' id='11' type='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91750' id='8' type='layout-basic' w='98400' x='800' y='7250'>
+              <zone h='34522' id='1' name='Pay1' w='49200' x='800' y='7250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='34522' id='3' name='Pay2' w='49200' x='50000' y='7250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='26916' id='4' name='Pay3' w='49200' x='800' y='41772'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='26916' id='5' name='Pay4' w='49200' x='50000' y='41772'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30312' id='6' name='Pay5' w='49200' x='800' y='68688'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30312' id='7' name='Pay6' w='49200' x='50000' y='68688'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1150' minheight='964' minwidth='1150' sizing-mode='fixed' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='7' param='vert' removable='false' type='layout-flow' w='98608' x='696' y='830'>
+            <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98608' x='696' y='830'>
+              <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98608' x='696' y='830' />
+              <zone h='87863' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98608' x='696' y='11307'>
+                <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                  <story-points>
+                    <story-point caption='Education and Marriage Analysis' captured-sheet='Edu &amp; Mar' id='1' />
+                    <story-point caption='Payment Details Analysis' captured-sheet='Payment Dash' id='2' />
+                    <story-point caption='Heatmaps  Analysis' captured-sheet='Heat_Maps' id='3' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='57'>
+    <window class='worksheet' name='Education DA'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Education DA-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Education (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Marriage DA'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Marriage DA-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[none:Marriage (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Edu &amp; Mar'>
+      <viewpoints>
+        <viewpoint name='Education DA'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Education DA-2' />
+        <viewpoint name='Marriage DA'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Marriage DA-2' />
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='Pay1'>
+      <cards>
+        <edge name='left'>
+          <strip size='250'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Pay2'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Pay3'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Pay4'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Pay5'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Pay6'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Payment Dash'>
+      <viewpoints>
+        <viewpoint name='Pay1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pay2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pay3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pay4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pay5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pay6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+    </window>
+    <window class='worksheet' name='out_buck&amp;age_bin'>
+      <cards>
+        <edge name='left'>
+          <strip size='316'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='out_bucket&amp;Edu'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='250'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='out_bucket&amp;Mar'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='250'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='out_gender_marital'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='250'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='out_gender_bin'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='250'>
+            <card pane-specification-id='0' param='[federated.1oy707c1xfx7hr148e3g41328bsr].[cnt:out_bucket:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Heat_Maps'>
+      <viewpoints>
+        <viewpoint name='out_buck&amp;age_bin' />
+        <viewpoint name='out_bucket&amp;Edu' />
+        <viewpoint name='out_bucket&amp;Mar' />
+        <viewpoint name='out_gender_bin' />
+        <viewpoint name='out_gender_marital' />
+      </viewpoints>
+      <active id='18' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='22' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>
